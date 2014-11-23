@@ -5,7 +5,7 @@ library("base")
 library("stringr")
 
 # NOTE: Copy and paste the working directory path (where data is stored)
-setwd("S:/Coursera/C3 - Cleaning Data/Course Project/UCI HAR Dataset")
+setwd("...")
 
 # # # # # # # # # # # # # # # # # # # # # # 
 # Reading all datasets in R
@@ -103,7 +103,7 @@ head(data)
 # # # # # # # # # # # # # # # # # # # # # # 
 
 # Selecting only column names which contains "Mean", "std" 
-data.select <- data[grep("mean|std|subject|activity",names(data))]
+data.select <- data[grep("Mean|Std|mean|std|subject|activity",names(data))]
 str(data.select)
 
 # # # # # # # # # # # # # # # # # # # # # # 
