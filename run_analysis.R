@@ -4,6 +4,9 @@ library("dplyr")
 library("base")
 library("stringr")
 
+# NOTE: Copy and paste the path where data is stored
+setwd("S:/Coursera/C3 - Cleaning Data/Course Project/UCI HAR Dataset")
+
 # # # # # # # # # # # # # # # # # # # # # # 
 # Reading all datasets in R
 # # # # # # # # # # # # # # # # # # # # # # 
