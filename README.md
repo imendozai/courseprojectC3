@@ -7,7 +7,18 @@ Steps to obtain the Tidy Data as output:
 - Download the Samsung data (link included in the repository) and save it in your computer
 - Open the script "run_analysis.R"
 - Copy and Paste your working directory in the corresponding section of the script
-- Run the whole script
+- The script works as follow:
+    - Reads each of the datasets needed to create the tidy data (Train, Test, Features, Subject and Activity data)
+    - Assigns labels to each data
+    - Merges Train, Subject and Activity data
+    - Merges Test, Subject and Activity data
+    - Adds rows together for Train and Test data
+    - Selects only columns that contains the words "Mean", "mean", "Std", "std", and additionally the "sbuject", "activity"
+    - Assigns activity labels
+    - Removes symbols like "()" from names in the variables
+    - Groups by and summarizes data by activity and subject (mean of each variable)
+
+- You can select and run the whole script
 - The output will be a tidy data with the mean of 86 variables per activity and subject
 
 The list of variables in the final dataset is the following:
@@ -101,3 +112,4 @@ angletBodyGyroJerkMean,gravityMean
 angleX,gravityMean
 angleY,gravityMean
 angleZ,gravityMean
+
